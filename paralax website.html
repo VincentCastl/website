@@ -1,48 +1,51 @@
 <!doctype html>
 <html>
   <head>
-    <title>MoonLight Parallax Effects | Vanilla Javascript</title>
+    <title>VincentC | Vanilla Javascript</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
-      <a href="#" class="logo">Logo</a>
+      <a href="#" class="logo">artvc</a>
       <ul>
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Work</a></li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Resume</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </header>
     <section>
-      <img src="stars.png" id="stars">
-      <img src="moon.png" id="moon">
-      <img src="mountains_behind.png" id="mountains_behind">
-      <h2 id="text">Moon Light</h2>
+      <!--<img src="pain.png" id="pain">-->
+      <!--<img src="ouch.png" id="ouch.png">-->
+      <img src="chairMC.png" id="chairMC">
+      <h2 id="text">Manga</h2>
       <a href="#sec" id="btn">Explore</a>
-      <img src="mountains_front.png" id="mountains_front">
+      <!--<img src="publicMC.jpg" id="publicMC">-->
       <div class="content">
     </section>
     <div class="sec" id="sec">
-      <h2>Vincent_Castle Art</h2>
+      <h2>VincentCastleArt</h2>
       <p>This is an example of a Paralax style website that used HTML, css and a cup of Javascript
-        <br><br>For more website styles, please go through the Contact Tab</p>
+        <br><br>My original artwork will be showcased on the Websit as such, the files are not be used for Commercial projects.
+        <br><br>For other projects such as C# scripts and SQL queries, pleases go to https://github.com/VincentCastl
+    </p>
     </div class="sec">
     <script type="text/javascript">
-      let moon = document.getElementById('moon');
-      let stars = document.getElementById('stars');
-      let mountains_behind = document.getElementById('mountains_behind');
-      let mountains_front = document.getElementById('mountains_front');
+      //let ouch = document.getElementById('ouch');
+      let pain = document.getElementById('pain');
+      let chairMC.PNG = document.getElementById('chairMC.PNG');
+      //let publicMC = document.getElementById('publicMC');
       let text = document.getElementById('text');
       let btn = document.getElementById('btn');
       let header = document.querySelector('header');
       window.addEventListener('scroll', function() {
         var value = window.scrollY;
-        moon.style.top = -value * -1.05 + 'px';
-        stars.style.left = value * 0.25 + 'px';
-        mountains_behind.style.top =-value * -0.5 + 'px';
+        //ouch.style.top = -value * -5 + 'px';
+        //pain.style.left = value * 0.25 + 'px';
+        chairMC.style.top =-value * -0.5 + 'px';
         header.style.top =-value * -0.5 + 'px';
-        mountains_front.style.top =-value * 0 + 'px';
+        //publicMC.style.top =-value * 0 + 'px';
         text.style.marginTop = value * 1.5 + 'px';
         btn.style.marginTop = value * 1.5 + 'px';
         text.style.marginRight = value * 4 + 'px';
